@@ -1,0 +1,128 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #fb53d1;
+}
+header {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fb53d1;
+    color: #fff;
+    text-align: center;
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header h1 {
+    margin-bottom: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    margin-bottom: 1rem;
+}
+.sinopse {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.sinopse img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.cards {
+    display: flex;
+    gap: 16px;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.trailer{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.trailer iframe{
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 14px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+.trailer:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+.trailer i{
+    font-size: 32px;
+    color:#fb53d1;
+}
+
+.trailer p{
+    color: #fb53d1;
+}
+.curiosidades{
+    display: grid;
+    gap: 16px;
+}
+.imagens-posters{
+    display: flex;
+    gap: 16px;
+}
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    border:1px solid #ddd;
+    border-radius: 4px;
+}
+button{
+    background: #333;
+    color:#fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+button:hover{
+    background:linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(15, 255, 251, 1) 35%, rgba(0, 59, 71, 1) 100%);
+    color: black;
+}
